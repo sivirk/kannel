@@ -1,0 +1,2 @@
+<?php
+print rawurlencode("http://127.0.0.1/dlr.php&?p=%p&P=%p&d=%d&A=%A&F=%F")
