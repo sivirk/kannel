@@ -839,7 +839,7 @@ static SMPP_PDU *msg_to_pdu(SMPP *smpp, Msg *msg)
     pdu = smpp_pdu_create(submit_sm,
                           counter_increase(smpp->message_id_counter));
 
-    pdu->u.submit_sm.source_addr =  octstr_create(""); //octstr_duplicate(msg->sms.sender);
+    pdu->u.submit_sm.source_addr =  octstr_duplicate(msg->sms.sender);
     pdu->u.submit_sm.destination_addr = octstr_duplicate(msg->sms.receiver);
 
     /* Set the service type of the outgoing message. We'll use the config
