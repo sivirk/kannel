@@ -107,3 +107,9 @@ utils/run_kannel_box
 utils/seewbmp
 wmlscript/wmlsc
 wmlscript/wmlsdasm
+
+test/test_date
+test/test_file_traversal
+test/test_hash
+utils/decode_emimsg
+
